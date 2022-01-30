@@ -4,8 +4,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-import javax.sound.midi.Soundbank;
-
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Department;
@@ -56,13 +54,6 @@ public class Program {
 		System.out.println("Delete completed");
 		
 		sc.close();
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 }
