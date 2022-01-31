@@ -1,10 +1,12 @@
 package application;
 
+import java.util.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program2 {
 	public static void main(String[] args) {
@@ -20,6 +22,11 @@ public class Program2 {
 			System.out.println(obj);
 
 		}
+		
+		System.out.println("\n=== TESTE 3: seller insert ===");
+		Department newDepartment = new Department(null, "Foods");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id = " + newDepartment.getId());
 	}
 
 }
